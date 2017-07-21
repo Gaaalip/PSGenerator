@@ -235,12 +235,12 @@ console.log("vValue :" +  vValue);
               }
         } */
 
-    var values = [vValue, wValue, xValue, yValue];
-    var values2 = [maxSafetyValue, safeValue, midSafeValue];
+    var values2 = [vValue, wValue, xValue, yValue];
+    var values3 = [maxSafetyValue, safeValue, midSafeValue];
 
-    for (i = 0; i < values.length; i++) {
-        for (j = 0; j < values2.length; j++) {
-            if (values[i] > values2[j]) {
+    for (i = 0; i < values2.length; i++) {
+        for (j = 0; j < values3.length; j++) {
+            if (values2[i] > values3[j]) {
 
                 alertH();
                 v.value = "";
