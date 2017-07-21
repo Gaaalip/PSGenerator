@@ -25,7 +25,7 @@ var output = document.getElementById("output");
 
 function getValue() {
     
-    var vValue = v.value;
+    var vValue = v.value.trim();
     var wValue = w.value;
     var xValue = x.value;
     var yValue = y.value;
