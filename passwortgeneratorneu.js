@@ -1,3 +1,5 @@
+var ERROR_MESSAGE_CHANGE_SAFE_AND_MID_SAFE = "Bitte die Werte von hoher Sicherheit und  mittlerer Sicherheit anpassen!";
+
 //_________________________________Elemente zuweisen
 
 
@@ -72,9 +74,11 @@ function parse(values) {
         alert("Bitte nur Zahlen verwenden")
     };
 
+    /*
     function alertC() {
         alert("Bitte die Werte von hoher Sicherheit und  mittlerer Sicherheit anpassen!")
     };
+    */
 
     function alertD() {
         alert("Bitte den Wert mittlerer Sicherheit anpassen!")
@@ -97,7 +101,7 @@ function parse(values) {
     };
 
     if (maxSafetyValue != "" && safeValue == "" && midSafeValue == "") {
-        alertC();
+        alert(ERROR_MESSAGE_CHANGE_SAFE_AND_MID_SAFE);
         return false;
     }
 
