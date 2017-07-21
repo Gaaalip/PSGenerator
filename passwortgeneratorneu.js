@@ -32,9 +32,18 @@ function getValue() {
     var safeValue = safe.value;
     var midSafeValue = midSafe.value;
 
-    var arrayValues = [passwordValue, vValue, wValue, xValue, yValue, maxSafetyValue, safeValue, midSafeValue];
+    var values = {
+        password: passwordValue, 
+        v:         vValue, 
+        w:         wValue, 
+        x:         xValue, 
+        y:         yValue, 
+        maxSafety: maxSafetyValue
+        safe:      safeValue, 
+        midSafe:   midSafeValue
+    };
 
-    parse(arrayValues);
+    parse(values);
     var arrayValues2 = parse(arrayValues);
     psStrength(arrayValues2);
     var arrayValues3 = psStrength(arrayValues2);
