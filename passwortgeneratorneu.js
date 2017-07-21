@@ -23,7 +23,6 @@ var output = document.getElementById("output");
 
 function getValue() {
     
-    var passwordValue = password.value;
     var vValue = v.value;
     var wValue = w.value;
     var xValue = x.value;
@@ -33,7 +32,7 @@ function getValue() {
     var midSafeValue = midSafe.value;
 
     var values = {
-        password: passwordValue, 
+        password:  password.value, 
         v:         vValue, 
         w:         wValue, 
         x:         xValue, 
