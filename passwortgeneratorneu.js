@@ -1,4 +1,9 @@
 var ERROR_MESSAGE_CHANGE_SAFE_AND_MID_SAFE = "Bitte die Werte von hoher Sicherheit und  mittlerer Sicherheit anpassen!";
+var ERROR_MESSAGE_UNSAFE_SYMBOL = "? ist ein unsicheres Symbol und eventuell mit gewissen Seiten nicht kompatibel.";
+
+function alertWithValue(errorMessage, value) {
+    alert(errorMessage.replace(/[?]/g', value));
+};
 
 //_________________________________Elemente zuweisen
 
@@ -283,13 +288,10 @@ function psStrength(array) {
     var symbols = ['/', '@', '#', '%', '&', '.', '!', '*', '+', '?', '|', '(', ')', '[', ']', '{', '}', '\\'];
     var negativeSymbols = ['"', "'", "<", ">", "§", ";", ":", "ß", "_", "-", "`", "°", "^"];
     var actualStrength = 0;
-
-
-    var message = "    ist ein unsicheres Symbol und eventuell mit gewissen Seiten nicht kompatibel.";
-
-    function alertI() {
-        alert(passwordCharacter + message)
-    };
+                                   
+    function alertI(character) {
+        alertWithValue(ERROR_MESSAGE_UNSAFE_SYMBOL, character);
+    }
 
     for (var k = 0; k < passwordValue.length; k++) {
         var passwordCharacter = passwordValue.charAt(k);
