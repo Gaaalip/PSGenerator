@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Passwortgenerator</title>
+</head>
+
+<body>
+
+
+
+    Wert Zahlen <input type="text" id="numbers">
+    <br> Wert Grossbuchstaben <input type="text" id="literalsBig">
+    <br> Wert Kleinbuchstaben <input type="text" id="literalsSmall">
+    <br> Wert Symbole <input type="text" id="symbols">
+    <br> Maximale Sicherheit <input type="text" id="maxSafety">
+    <br> Hohe Sicherheit ab <input type="text" id="safe">
+    <br> Mittlere Sicherheit ab <input type="text" id="midSafe">
+    <br> Passwortlaenge<input type="text" id="passwordLength">
+    <br>Anzahl Passwörter <input type="text" id="passwordAmount">
+    <div Id="output"></div>
+
+
+    <br>
+    <input type="text" id="newPassword">
+    <button id="check">Check Password</button>
+    <button id="generate">Generiere Passwort</button>
+    <button id="clear">Felder leeren</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form id="radioform" name="radioform">
+    <input type="radio" id="radio10" name="radiox" value="1-10">
+    <label for="1-10">1-10 characters</label>    
+    <input type="radio" id="radio20" name="radiox" value="11-20">
+    <label for="11-20">11-20 characters</label>           
+    <input type="radio" id="radio30" name="radiox" value="21-30">
+    <label for="21-30">21-30 characters</label>         
+    </form>
+   
+        <div>
+        <p id="strength"></p>
+        <p id="inProcent"></p>
+        </div>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="zufall3.js"></script>
+    <script src="passwortgeneratorneu.js"></script>
+
+</body>
+
+</html>
