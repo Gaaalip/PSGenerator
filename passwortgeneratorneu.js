@@ -2,7 +2,7 @@ var ERROR_MESSAGE_CHANGE_SAFE_AND_MID_SAFE = "Bitte die Werte von hoher Sicherhe
 var ERROR_MESSAGE_UNSAFE_SYMBOL = "? ist ein unsicheres Symbol und eventuell mit gewissen Seiten nicht kompatibel.";
 
 function alertWithValue(errorMessage, value) {
-    alert(errorMessage.replace(/[?]/g', value));
+    alert(errorMessage.replace(/[?]/g, value));
 };
 
 //_________________________________Elemente zuweisen
