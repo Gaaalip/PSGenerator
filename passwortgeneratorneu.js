@@ -53,14 +53,14 @@ function getValue() {
 //______________________________________________
 function parse(values) {
 
-    var passwordValue = values.passwordValue;
-    var vValue = values.vValue;
-    var wValue = values.wValue;
-    var xValue = values.xValue;
-    var yValue = values.yValue;
-    var maxSafetyValue = values.maxSafetyValue;
-    var safeValue = values.safeValue;
-    var midSafeValue = values.midSafeValue;
+    var passwordValue = values.password;
+    var vValue = values.v;
+    var wValue = values.w;
+    var xValue = values.x;
+    var yValue = values.y;
+    var maxSafetyValue = values.maxSafety;
+    var safeValue = values.safe;
+    var midSafeValue = values.midSafe;
 
 
 
