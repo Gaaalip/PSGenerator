@@ -49,8 +49,8 @@ function getValue() {
         midSafe:   midSafeValue
     };
 
-    parse(values);
-    var arrayValues2 = parse(arrayValues);
+    // parse(values);
+    var arrayValues2 = parse(values);
     psStrength(arrayValues2);
     var arrayValues3 = psStrength(arrayValues2);
     show(arrayValues3);
