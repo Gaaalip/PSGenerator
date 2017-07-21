@@ -53,7 +53,6 @@ function getValue() {
 //______________________________________________
 function parse(values) {
 
-    var passwordValue = values.password;
     var vValue = values.v;
     var wValue = values.w;
     var xValue = values.x;
@@ -113,11 +112,11 @@ function parse(values) {
     }
 
 
-    if (passwordValue == "") {
+    if (values.password == "") {
         alertA();
         return false;
     } else {
-        passwordValue = passwordValue;
+        values.password = values.password;
     };
 
 
@@ -249,7 +248,7 @@ console.log("vValue :" +  vValue);
 
 
     }
-    var arrayValues2 = [passwordValue, vValue, wValue, xValue, yValue, maxSafetyValue, safeValue, midSafeValue];
+    var arrayValues2 = [values.password, vValue, wValue, xValue, yValue, maxSafetyValue, safeValue, midSafeValue];
 
     return arrayValues2;
 
