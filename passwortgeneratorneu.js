@@ -51,25 +51,16 @@ function getValue() {
     //psStrength(arrayValues2);
 }; //show(arrayValues3);
 //______________________________________________
-function parse(array) {
+function parse(values) {
 
-    /*    vWert = vWert ?                v : 1;
-        wWert = wWert ?                w : 1;
-        xWert = xWert ?                x : 0.75;
-        yWert = yWert ?                 y : 1;
-        hoechsteSicherheitWert = hoechsteSicherheitWert ? hoechsteSicherheitWert : 15;
-        
-        sicherWert = sicherWert ?    sicherWert : 12;
-        mittelWert = mittelWert ?    mittelWert : 8;   */
-
-    var passwordValue = array[0];
-    var vValue = array[1];
-    var wValue = array[2];
-    var xValue = array[3];
-    var yValue = array[4];
-    var maxSafetyValue = array[5];
-    var safeValue = array[6];
-    var midSafeValue = array[7];
+    var passwordValue = values.passwordValue;
+    var vValue = values.vValue;
+    var wValue = values.wValue;
+    var xValue = values.xValue;
+    var yValue = values.yValue;
+    var maxSafetyValue = values.maxSafetyValue;
+    var safeValue = values.safeValue;
+    var midSafeValue = values.midSafeValue;
 
 
 
