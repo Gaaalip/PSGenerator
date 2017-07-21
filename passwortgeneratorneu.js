@@ -44,7 +44,7 @@ function getValue() {
         w:         wValue, 
         x:         xValue, 
         y:         yValue, 
-        maxSafety: maxSafetyValue
+        maxSafety: maxSafetyValue,
         safe:      safeValue, 
         midSafe:   midSafeValue
     };
